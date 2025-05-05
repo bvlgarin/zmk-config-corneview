@@ -154,20 +154,6 @@
             key-positions = <8 9>;
             timeout-ms = <20>;
         };
-
-        LangLeft {
-            bindings = <&mt LEFT_WIN SPACE>;
-            key-positions = <16 37>;
-            timeout-ms = <20>;
-            layers = <0>;
-        };
-
-        LangRight {
-            bindings = <&mt BACKSPACE J>;
-            key-positions = <19 40>;
-            timeout-ms = <20>;
-            layers = <0>;
-        };
     };
 };
 
