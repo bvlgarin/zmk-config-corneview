@@ -123,7 +123,7 @@
 
         GraveSign {
             bindings = <&kp GRAVE>;
-            key-positions = <12 24>;
+            key-positions = <11 23>;
             timeout-ms = <20>;
         };
 
@@ -135,19 +135,19 @@
 
         PlusSign {
             bindings = <&kp PLUS>;
-            key-positions = <2 3>;
+            key-positions = <7 8>;
             timeout-ms = <20>;
         };
 
         UnderscoreSign {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <7 8>;
+            key-positions = <5 6>;
             timeout-ms = <20>;
         };
 
         PipeSign {
             bindings = <&kp PIPE>;
-            key-positions = <8 9>;
+            key-positions = <18 17>;
             timeout-ms = <20>;
         };
 
