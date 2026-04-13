@@ -126,6 +126,30 @@
             key-positions = <33 35 34>;
             timeout-ms = <20>;
         };
+
+        copy_l {
+            bindings = <&kp K_COPY>;
+            key-positions = <26 25>;
+            timeout-ms = <20>;
+        };
+
+        copy_r {
+            bindings = <&kp K_COPY>;
+            key-positions = <33 34>;
+            timeout-ms = <20>;
+        };
+
+        paste_l {
+            bindings = <&kp K_PASTE>;
+            key-positions = <26 27>;
+            timeout-ms = <20>;
+        };
+
+        paste_r {
+            bindings = <&kp K_PASTE>;
+            key-positions = <33 32>;
+            timeout-ms = <20>;
+        };
     };
 };
 
