@@ -128,26 +128,26 @@
         };
 
         copy_l {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp LC(C)>;
             key-positions = <26 25>;
             timeout-ms = <20>;
         };
 
         copy_r {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp RC(C)>;
             key-positions = <33 34>;
             timeout-ms = <20>;
         };
 
         paste_l {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp LC(V)>;
             key-positions = <26 27>;
             timeout-ms = <20>;
         };
 
         paste_r {
-            bindings = <&kp K_PASTE>;
-            key-positions = <33 32>;
+            bindings = <&kp RC(V)>;
+            key-positions = <32 33>;
             timeout-ms = <20>;
         };
     };
