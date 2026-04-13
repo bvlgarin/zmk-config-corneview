@@ -121,36 +121,6 @@
             timeout-ms = <20>;
         };
 
-        copy {
-            bindings = <&kp K_COPY>;
-            key-positions = <24 25>;
-            timeout-ms = <20>;
-        };
-
-        paste {
-            bindings = <&kp K_PASTE>;
-            key-positions = <34 35>;
-            timeout-ms = <20>;
-        };
-
-        cut {
-            bindings = <&kp K_CUT>;
-            key-positions = <24 25 26>;
-            timeout-ms = <20>;
-        };
-
-        undo {
-            bindings = <&kp K_UNDO>;
-            key-positions = <24 26>;
-            timeout-ms = <20>;
-        };
-
-        redo {
-            bindings = <&kp K_REDO>;
-            key-positions = <33 35>;
-            timeout-ms = <20>;
-        };
-
         task_mng {
             bindings = <&kp RS(RC(ESCAPE))>;
             key-positions = <33 35 34>;
