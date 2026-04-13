@@ -150,6 +150,12 @@
             key-positions = <32 33>;
             timeout-ms = <20>;
         };
+
+        test {
+            bindings = <&sl 2>;
+            key-positions = <24 25>;
+            timeout-ms = <20>;
+        };
     };
 };
 
@@ -177,10 +183,10 @@
 
         raise {
             bindings = <
-&trans        &kp HOME  &kp PAGE_DOWN  &kp UP    &kp PAGE_UP  &trans       &trans    &kp PG_UP  &kp UP    &kp PG_DN  &kp HOME  &trans
-&trans        &kp END   &kp LEFT       &kp DOWN  &kp RIGHT    &kp MINUS    &kp PLUS  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END   &trans
-&out OUT_TOG  &trans    &trans         &trans    &trans       &trans       &trans    &trans     &trans    &trans     &trans    &out OUT_TOG
-                                       &trans    &trans       &trans       &trans    &trans     &mo 4
+&trans        &kp HOME  &kp PAGE_DOWN  &kp UP    &kp PAGE_UP     &trans       &trans    &kp PG_UP  &kp UP    &kp PG_DN  &kp HOME  &trans
+&trans        &kp END   &kp LEFT       &kp DOWN  &kp RIGHT       &kp MINUS    &kp PLUS  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END   &trans
+&out OUT_TOG  &trans    &trans         &trans    &trans          &trans       &trans    &trans     &trans    &trans     &trans    &out OUT_TOG
+                                       &trans    &kp LEFT_SHIFT  &trans       &trans    &trans     &mo 4
             >;
         };
 
