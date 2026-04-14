@@ -193,8 +193,7 @@
     };
 
     // Блок настройки дисплея nice!view
-    nice_view_spi: nice_view_spi {
-        compatible = "zmk,nice-view";
+    &nice_view_spi {
         widgets {
             layer_status {
                 compatible = "zmk,widget-layer-status";
