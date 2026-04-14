@@ -43,10 +43,10 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                           // <---[[produces tap if held longer than tapping-term-ms]]
+            tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 5>;        // <---[[right-hand keys]]
+            hold-trigger-key-positions = <0 1 2 3 4 5>;
         };
     };
 
@@ -191,13 +191,13 @@
             >;
         };
     };
+};
 
-    // Блок настройки дисплея nice!view
-    &nice_view_spi {
-        widgets {
-            layer_status {
-                compatible = "zmk,widget-layer-status";
-            };
+// Виджет статуса слоёв для nice!view
+&nice_view_spi {
+    widgets {
+        layer_status {
+            compatible = "zmk,widget-layer-status";
         };
     };
 };
