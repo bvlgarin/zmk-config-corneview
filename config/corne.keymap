@@ -192,12 +192,3 @@
         };
     };
 };
-
-// Виджет статуса слоёв для nice!view
-&nice_view_spi {
-    widgets {
-        layer_status {
-            compatible = "zmk,widget-layer-status";
-        };
-    };
-};
