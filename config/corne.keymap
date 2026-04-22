@@ -20,23 +20,24 @@
         tdF: tap_dance_lang1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&kp F>, <&kp LG(F11)>;
         };
 
         tdJ: tap_dance_lang2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp J>, <&kp LG(F12)>;
+            tapping-term-ms = <100>;
+            bindings = <&kp J>, <&kp LG(SPACE)>;
         };
 
-        lt_tog: layer_tap_toggle {                        // <---[[custom hold-tap]]
+        lt_tog: layer_tap_toggle {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&tog>, <&kp>;                     // <---[[tog, when kp]]
+            bindings = <&tog>, <&kp>;
+                     // <---[[tog, when kp]]
         };
 
         lh_pht: left_positional_hold_tap {
