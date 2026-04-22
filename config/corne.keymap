@@ -20,14 +20,14 @@
         tdF: tap_dance_lang1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&kp F>, <&kp LG(F11)>;
         };
 
         tdJ: tap_dance_lang2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&kp J>, <&kp LG(F12)>;
         };
 
@@ -137,30 +137,6 @@
             key-positions = <32 33>;
             timeout-ms = <20>;
         };
-
-        LangRu {
-            bindings = <&kp LG(F11)>;
-            key-positions = <0 1>;
-            timeout-ms = <20>;
-        };
-
-         LangUs {
-            bindings = <&kp LG(F12)>;
-            key-positions = <10 11>;
-            timeout-ms = <20>;
-        };
-
-        LangRuL {
-            bindings = <&kp LG(F11)>;
-            key-positions = <36 38>;
-            timeout-ms = <20>;
-        };
-
-        //LangUsL {
-        //    bindings = <&kp LG(F12)>;
-        //    key-positions = <39 41>;
-        //    timeout-ms = <20>;
-        //};
     };
 
     keymap {
