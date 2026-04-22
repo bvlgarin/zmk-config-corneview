@@ -28,14 +28,14 @@
         tdF: tap_dance_lang1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&kp F>, <&kp LG(F11)>;
         };
 
         tdJ: tap_dance_lang2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&kp J>, <&kp LG(F12)>;
         };
 
