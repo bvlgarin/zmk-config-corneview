@@ -22,7 +22,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&tog>, <&kp>;
+            bindings = <&kp>, <&tog>;
         };
 
         tdF: tap_dance_lang1 {
