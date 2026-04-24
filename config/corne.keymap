@@ -21,7 +21,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp F>, <&kp LG(SPACE)>;
+            bindings = <&kp F>, <&sk LG(SPACE)>;
         };
 
         tdJ: tap_dance_lang2 {
@@ -37,7 +37,8 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&tog>, <&kp>;
-                      // <---[[tog, when kp]]
+
+            // <---[[tog, when kp]]
         };
 
         lh_pht: left_positional_hold_tap {
@@ -51,11 +52,16 @@
             hold-trigger-key-positions = <0 1 2 3 4 5>;    // <---[[right-hand keys]]
         };
 
-        tdTEST: tdTEST {
+        tdTEST: td_TEST {
             compatible = "zmk,behavior-tap-dance";
-            label = "TDTEST";
             #binding-cells = <0>;
             bindings = <&kp ENTER>, <&kp SPACE>, <&kp BACKSPACE>;
+        };
+
+        td_TS2: td_TEST2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp O>;
         };
     };
 
