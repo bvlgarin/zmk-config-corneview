@@ -21,14 +21,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp LGUI(F)>, <&kp SPACE>;
+            bindings = <&kp LG(F)>, <&kp SPACE>;
         };
 
         tdJ: tap_dance_lang2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp LGUI(J)>, <&kp LG(SPACE)>;
+            bindings = <&kp LG(J)>, <&kp LG(SPACE)>;
         };
 
         c_lt_tog: custom_layer_tap_toggle {                // <---[[custom hold-tap]]
