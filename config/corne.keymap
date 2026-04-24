@@ -59,11 +59,6 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp O>;
         };
-
-        kt: key_toggle_rus {
-            compatible = "zmk,behavior-key-toggle";
-            #binding-cells = <1>;
-        };
     };
 
     combos {
