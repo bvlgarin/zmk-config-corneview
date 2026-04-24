@@ -53,6 +53,14 @@
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp F5>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&mt LCMD ENTER>, <&kp BACKSPACE>;
+
+            label = "NEW_BEHAVIOR";
+        };
     };
 
     combos {
