@@ -17,20 +17,6 @@
 
 / {
     behaviors {
-        tdF: tap_dance_lang1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp F>, <&kp LG(F11)>;
-        };
-
-        tdJ: tap_dance_lang2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp J>, <&kp LG(F12)>;
-        };
-
         c_lt_tog: custom_layer_tap_toggle {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -73,7 +59,7 @@
             display-name = "base";
             bindings = <
 &kp ESC    &kp Q  &kp W  &td_E      &kp R  &kp T           &kp Y                &kp U  &td_I          &kp O    &kp P     &c_lt_tog 5 LEFT_BRACKET
-&kp TAB    &kp A  &kp S  &kp D      &tdF   &kp G           &kp H                &tdJ   &kp K          &kp L    &kp SEMI  &kp SQT
+&kp TAB    &kp A  &kp S  &kp D      &kp F  &kp G           &kp H                &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V  &kp B           &kp N                &kp M  &kp COMMA      &kp DOT  &kp FSLH  &mt RALT RIGHT_BRACKET
                          &kp LCTRL  &mo 1  &mt LGUI RET    &mt BACKSPACE SPACE  &mo 2  &kp BACKSPACE
             >;
