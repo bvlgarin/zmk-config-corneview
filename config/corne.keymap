@@ -21,24 +21,22 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp F>, <&sk LG(SPACE)>;
+            bindings = <&kp F>, <&kp LG(F11)>;
         };
 
         tdJ: tap_dance_lang2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp J>, <&kp RG(SPACE)>;
+            bindings = <&kp J>, <&kp LG(F12)>;
         };
 
-        c_lt_tog: custom_layer_tap_toggle {
+        c_lt_tog: custom_layer_tap_toggle {                // <---[[custom hold-tap]]
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&tog>, <&kp>;
-
-            // <---[[tog, when kp]]
+            bindings = <&tog>, <&kp>;                      // <---[[tog, when kp]]
         };
 
         lh_pht: left_positional_hold_tap {
