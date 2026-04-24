@@ -1,9 +1,9 @@
 #pragma once
 
-#define DEF 0
+#define BSE 0
 #define LWR 1
 #define RSE 2
-#define FLR 3
+#define FBT 3
 #define ADJ 4
 
 #include <behaviors.dtsi>
