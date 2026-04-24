@@ -37,7 +37,6 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&tog>, <&kp>;
-                      // <---[[tog, when kp]]
         };
 
         lh_pht: left_positional_hold_tap {
