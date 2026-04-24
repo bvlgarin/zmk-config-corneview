@@ -153,6 +153,7 @@
         compatible = "zmk,keymap";
 
         base {
+            display-name = "base";
             bindings = <
 &kp ESC    &kp Q  &kp W  &td_E      &kp R  &kp T       &kp Y                &kp U  &kp I          &kp O       &kp P          &c_lt_tog 0 LEFT_BRACKET
 &kp TAB    &kp A  &kp S  &kp D      &kp F  &kp G       &kp H                &kp J  &kp K          &kp L       &kp SEMICOLON  &kp SQT
