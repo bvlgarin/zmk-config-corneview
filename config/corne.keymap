@@ -193,7 +193,7 @@
         ru {
             display-name = "ru";
             bindings = <
-&kt ESCAPE      &td_TS2           &kp W  &kp R    &kp K          &kp COMMA          &kp Q            &kp S                &kp Z    &kp SQT     &kp A  &trans
+&kp ESCAPE      &td_TS2           &kp W  &kp R    &kp K          &kp COMMA          &kp Q            &kp S                &kp Z    &kp SQT     &kp A  &trans
 &kp SLASH       &kp P             &kp D  &kp Y    &kp N          &kp L              &kp B            &kp F                &kp J    &kp T       &kp C  &kp RS(SLASH)
 &kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp G  &kp H    &kp V          &kp U              &mt GRAVE T      &mt RIGHT_BRACKET M  &kp E    &kp PERIOD  &kp I  &kp RIGHT_SHIFT
                                          &tdTEST  &kp BACKSPACE  &mt ENTER SPACE    &mt ENTER SPACE  &kp BACKSPACE        &tdTEST
