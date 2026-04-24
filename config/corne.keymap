@@ -37,8 +37,6 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&tog>, <&kp>;                      // <---[[tog, when kp]]
-
-            // <---[[tog, when kp]]
         };
 
         lh_pht: left_positional_hold_tap {
@@ -48,7 +46,6 @@
             tapping-term-ms = <100>;                       // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-
             hold-trigger-key-positions = <0 1 2 3 4 5>;    // <---[[right-hand keys]]
         };
 
