@@ -31,12 +31,12 @@
             bindings = <&kp LG(J)>, <&kp LG(SPACE)>;
         };
 
-        c_lt_tog: custom_layer_tap_toggle {
+        c_lt_tog: custom_layer_tap_toggle {                // <---[[custom hold-tap]]
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&tog>, <&kp>;
+            bindings = <&tog>, <&kp>;                      // <---[[tog, when kp]]
 
             // <---[[tog, when kp]]
         };
