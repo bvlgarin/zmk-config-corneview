@@ -31,12 +31,13 @@
             bindings = <&kp J>, <&kp LG(F12)>;
         };
 
-        c_lt_tog: custom_layer_tap_toggle {                // <---[[custom hold-tap]]
+        c_lt_tog: custom_layer_tap_toggle {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&tog>, <&kp>;                      // <---[[tog, when kp]]
+            bindings = <&tog>, <&kp>;
+                      // <---[[tog, when kp]]
         };
 
         lh_pht: left_positional_hold_tap {
@@ -60,6 +61,20 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp O>;
+        };
+
+        td_E: tap_dance_e_f5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp E>, <&kp F5>;
+        };
+
+        td_O: tap_dance_o_f5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp E>, <&kp F5>;
         };
     };
 
