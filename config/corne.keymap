@@ -32,10 +32,11 @@
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <0 1 2 3 4 5>;
         };
 
-       mt_lcmd: mt_lcmd_enter {
+        mt_lcmd: mt_lcmd_enter {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -59,7 +60,7 @@
         td_LCMD: td_left_cmd {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <280>;
             bindings = <&mt_lcmd LCMD ENTER>, <&kp BACKSPACE>;
         };
 
