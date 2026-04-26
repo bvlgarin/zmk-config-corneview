@@ -44,18 +44,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        tdTEST: td_TEST {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER>, <&kp SPACE>, <&kp BACKSPACE>;
-        };
-
-        td_TS2: td_TEST2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp I>, <&kp O>;
-        };
-
         td_lcmd: td_left_cmd {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -63,12 +51,11 @@
             bindings = <&mt_lr_cmd LCMD ENTER>, <&kp BACKSPACE>;
         };
 
-        new_behavior: new_behavior {
+        td_rcmd: td_right_cmd {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp E>, <&kp F5>;
-
-            label = "NEW_BEHAVIOR";
+            tapping-term-ms = <200>;
+            bindings = <&mt_lr_cmd LCMD ENTER>, <&kp BACKSPACE>;
         };
 
         td_E: td_e_f5 {
@@ -83,11 +70,16 @@
             bindings = <&kp I>, <&kp F5>;
         };
 
-        td_rcmd: td_right_cmd {
+        tdTEST: td_TEST {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt_lr_cmd LCMD ENTER>, <&kp BACKSPACE>;
+            bindings = <&kp ENTER>, <&kp SPACE>, <&kp BACKSPACE>;
+        };
+
+        td_TS2: td_TEST2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp O>;
         };
     };
 
