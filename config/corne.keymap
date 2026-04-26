@@ -36,7 +36,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 5>;
         };
 
-        mt_lcmd: mt_lcmd_enter {
+        mt_lr_cmd: mt_left_right_cmd {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -56,11 +56,11 @@
             bindings = <&kp I>, <&kp O>;
         };
 
-        td_LCMD: td_left_cmd {
+        td_lcmd: td_left_cmd {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt_lcmd LCMD ENTER>, <&kp BACKSPACE>;
+            bindings = <&mt_lr_cmd LCMD ENTER>, <&kp BACKSPACE>;
         };
 
         new_behavior: new_behavior {
@@ -180,7 +180,7 @@
 &kp ESC    &kp Q  &kp W  &td_E      &kp R  &kp T       &kp Y                &kp U  &td_I          &kp O       &kp P          &c_lt_tog 5 LEFT_BRACKET
 &kp TAB    &kp A  &kp S  &kp D      &kp F  &kp G       &kp H                &kp J  &kp K          &kp L       &kp SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V  &kp B       &kp N                &kp M  &kp COMMA      &kp PERIOD  &kp SLASH      &mt RALT RIGHT_BRACKET
-                         &kp LCTRL  &mo 1  &td_LCMD    &mt BACKSPACE SPACE  &mo 2  &kp BACKSPACE
+                         &kp LCTRL  &mo 1  &td_lcmd    &mt BACKSPACE SPACE  &mo 2  &kp BACKSPACE
             >;
         };
 
