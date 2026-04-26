@@ -41,7 +41,7 @@
             flavor = "hold-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <180>;
-            bindings = <&kp LCMD &kp ENTER>;
+            bindings = <&kp>, <&kp>;
         };
 
         tdTEST: td_TEST {
