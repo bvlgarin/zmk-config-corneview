@@ -82,6 +82,13 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp F5>;
         };
+
+        td_rcmd: td_right_cmd {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt_lr_cmd LCMD ENTER>, <&kp BACKSPACE>;
+        };
     };
 
     combos {
