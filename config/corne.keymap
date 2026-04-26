@@ -35,14 +35,14 @@
             hold-trigger-key-positions = <0 1 2 3 4 5>;
         };
 
-		mt_lcmd: mt_lcmd_enter {
-			compatible = "zmk,behavior-hold-tap";
-			#binding-cells = <2>;
-			flavor = "hold-preferred";
-			tapping-term-ms = <250>;
-			quick-tap-ms = <180>;
-			bindings = <&kp LCMD <&kp ENTER>;
-		};
+       mt_lcmd: mt_lcmd_enter {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            bindings = <&kp LCMD &kp ENTER>;
+        };
 
         tdTEST: td_TEST {
             compatible = "zmk,behavior-tap-dance";
@@ -56,12 +56,12 @@
             bindings = <&kp I>, <&kp O>;
         };
 
-		td_LCMD: td_left_cmd {
-			compatible = "zmk,behavior-tap-dance";
-			#binding-cells = <0>;
-			tapping-term-ms = <300>;
-			bindings = <&mt_lcmd LCMD ENTER>, <&kp BACKSPACE>;
-		};
+        td_LCMD: td_left_cmd {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&mt_lcmd LCMD ENTER>, <&kp BACKSPACE>;
+        };
 
         new_behavior: new_behavior {
             compatible = "zmk,behavior-tap-dance";
