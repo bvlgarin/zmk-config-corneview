@@ -17,7 +17,7 @@
 
 / {
     behaviors {
-        c_lt_tog: custom_layer_tap_toggle {
+        c_lt_tog: custom_layer_tap_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -36,7 +36,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 5>;
         };
 
-        mt_lr_cmd: mt_left_right_cmd {
+        mt_lr_cmd: left_right_td_cmd {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -58,16 +58,16 @@
             bindings = <&mt_lr_cmd LCMD ENTER>, <&kp BACKSPACE>;
         };
 
-        td_E: td_e_f5 {
+        td_e: td_e_f5_lctrl+f5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp E>, <&kp F5>;
+            bindings = <&kp E>, <&kp F5>, <&kp LC(F5)>;
         };
 
-        td_I: td_i_f5 {
+        td_i: td_i_f5_rctrl+f5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp I>, <&kp F5>;
+            bindings = <&kp I>, <&kp F5>, <&kp RC(F5)>;
         };
 
         tdTEST: td_TEST {
@@ -184,7 +184,7 @@
 
         base {
             bindings = <
-&td_tsk_mngr  &kp Q  &kp W  &td_E      &kp R  &kp T       &kp Y                &kp U  &td_I          &kp O       &kp P          &c_lt_tog 5 LEFT_BRACKET
+&td_tsk_mngr  &kp Q  &kp W  &td_e      &kp R  &kp T       &kp Y                &kp U  &td_i          &kp O       &kp P          &c_lt_tog 5 LEFT_BRACKET
 &kp TAB       &kp A  &kp S  &kp D      &kp F  &kp G       &kp H                &kp J  &kp K          &kp L       &kp SEMICOLON  &kp SQT
 &kp LSHFT     &kp Z  &kp X  &kp C      &kp V  &kp B       &kp N                &kp M  &kp COMMA      &kp PERIOD  &kp SLASH      &mt RALT RIGHT_BRACKET
                             &kp LCTRL  &mo 1  &td_lcmd    &mt BACKSPACE SPACE  &mo 2  &kp BACKSPACE
