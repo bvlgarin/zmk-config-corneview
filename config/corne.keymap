@@ -47,14 +47,14 @@
         td_lcmd: td_left_cmd {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&mt_lr_cmd LCMD ENTER>, <&kp SPACE>;
         };
 
         td_rcmd: td_right_cmd {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&mt_lr_cmd LCMD SPACE>, <&kp ENTER>;
         };
 
