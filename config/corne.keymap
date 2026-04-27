@@ -81,6 +81,14 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp O>;
         };
+
+        td_tsk_mngr: td_tsk_mngr {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp LS(LC(ESC))>;
+
+            tapping-term-ms = <100>;
+        };
     };
 
     combos {
@@ -176,10 +184,10 @@
 
         base {
             bindings = <
-&kp ESC    &kp Q  &kp W  &td_E      &kp R  &kp T       &kp Y                &kp U  &td_I          &kp O       &kp P          &c_lt_tog 5 LEFT_BRACKET
-&kp TAB    &kp A  &kp S  &kp D      &kp F  &kp G       &kp H                &kp J  &kp K          &kp L       &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V  &kp B       &kp N                &kp M  &kp COMMA      &kp PERIOD  &kp SLASH      &mt RALT RIGHT_BRACKET
-                         &kp LCTRL  &mo 1  &td_lcmd    &mt BACKSPACE SPACE  &mo 2  &kp BACKSPACE
+&mt LC(ESC) ESC  &kp Q  &kp W  &td_E      &kp R  &kp T       &kp Y                &kp U  &td_I          &kp O       &kp P          &c_lt_tog 5 LEFT_BRACKET
+&kp TAB          &kp A  &kp S  &kp D      &kp F  &kp G       &kp H                &kp J  &kp K          &kp L       &kp SEMICOLON  &kp SQT
+&kp LSHFT        &kp Z  &kp X  &kp C      &kp V  &kp B       &kp N                &kp M  &kp COMMA      &kp PERIOD  &kp SLASH      &mt RALT RIGHT_BRACKET
+                               &kp LCTRL  &mo 1  &td_lcmd    &mt BACKSPACE SPACE  &mo 2  &kp BACKSPACE
             >;
         };
 
