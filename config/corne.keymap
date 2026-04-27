@@ -11,9 +11,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-&lt { quick_tap_ms = <180>; };
+&lt { quick_tap_ms = <217>; };
 
-&mt { quick_tap_ms = <180>; };
+&mt { quick_tap_ms = <217>; };
 
 / {
     behaviors {
@@ -87,7 +87,7 @@
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&kp LS(LC(ESC))>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
     };
 
