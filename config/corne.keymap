@@ -58,6 +58,14 @@
             bindings = <&mt_lr_cmd LCMD SPACE>, <&kp ENTER>;
         };
 
+        td_tsk_mngr: td_tsk_mngr {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp LS(LC(ESC))>;
+
+            tapping-term-ms = <180>;
+        };
+
         td_e: td_e_f5_lctrl+f5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -84,14 +92,6 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp O>;
-        };
-
-        td_tsk_mngr: td_tsk_mngr {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp LS(LC(ESC))>;
-
-            tapping-term-ms = <180>;
         };
     };
 
