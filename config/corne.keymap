@@ -82,18 +82,6 @@
             tapping-term-ms = <210>;
         };
 
-        tdTEST: td_TEST {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER>, <&kp SPACE>, <&kp BACKSPACE>;
-        };
-
-        td_TS2: td_TEST2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp I>, <&kp O>;
-        };
-
         td_w: td_w_f2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -108,6 +96,18 @@
             bindings = <&kp O>, <&kp F2>;
 
             tapping-term-ms = <210>;
+
+        };
+        tdTEST: td_TEST {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER>, <&kp SPACE>, <&kp BACKSPACE>;
+        };
+
+        td_TS2: td_TEST2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp O>;
         };
     };
 
