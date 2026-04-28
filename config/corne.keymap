@@ -93,6 +93,22 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp O>;
         };
+
+        td_w: td_w_f2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp F2>;
+
+            tapping-term-ms = <210>;
+        };
+
+        td_o: td_o_f2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp F2>;
+
+            tapping-term-ms = <210>;
+        };
     };
 
     combos {
@@ -183,7 +199,7 @@
         base {
             display-name = "base";
             bindings = <
-&td_tsk_mngr  &kp Q  &kp W  &td_e      &kp R            &kp T       &kp Y     &kp U            &td_i          &kp O       &kp P          &c_lt_tog 5 LEFT_BRACKET
+&td_tsk_mngr  &kp Q  &td_w  &td_e      &kp R            &kp T       &kp Y     &kp U            &td_i          &td_o       &kp P          &c_lt_tog 5 LEFT_BRACKET
 &kp LSHIFT    &kp A  &kp S  &kp D      &kp F            &kp G       &kp H     &kp J            &kp K          &kp L       &kp SEMICOLON  &mt RSHIFT SQT
 &kp TAB       &kp Z  &kp X  &kp C      &kp V            &kp B       &kp N     &kp M            &kp COMMA      &kp PERIOD  &kp SLASH      &mt RALT RIGHT_BRACKET
                             &kp LCTRL  &lt 1 BACKSPACE  &td_lcmd    &td_rcmd  &lt 2 BACKSPACE  &mt ENTER DEL
