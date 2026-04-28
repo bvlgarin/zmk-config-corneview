@@ -47,14 +47,14 @@
         td_lcmd: td_left_cmd {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <240>;
             bindings = <&mt_lr_cmd LCMD ENTER>, <&kp SPACE>;
         };
 
         td_rcmd: td_right_cmd {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <240>;
             bindings = <&mt_lr_cmd LCMD SPACE>, <&kp ENTER>;
         };
 
@@ -62,12 +62,16 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp F5>, <&kp LC(F5)>;
+
+            tapping-term-ms = <210>;
         };
 
         td_i: td_i_f5_rctrl+f5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp F5>, <&kp RC(F5)>;
+
+            tapping-term-ms = <210>;
         };
 
         tdTEST: td_TEST {
@@ -185,10 +189,10 @@
         base {
             display-name = "base";
             bindings = <
-&td_tsk_mngr  &kp Q  &kp W  &td_e      &kp R            &kp T       &kp Y     &kp U            &td_i              &kp O       &kp P          &c_lt_tog 5 LEFT_BRACKET
-&kp TAB       &kp A  &kp S  &kp D      &kp F            &kp G       &kp H     &kp J            &kp K              &kp L       &kp SEMICOLON  &kp SQT
-&kp LSHFT     &kp Z  &kp X  &kp C      &kp V            &kp B       &kp N     &kp M            &kp COMMA          &kp PERIOD  &kp SLASH      &mt RALT RIGHT_BRACKET
-                            &kp LCTRL  &lt 1 BACKSPACE  &td_lcmd    &td_rcmd  &lt 2 BACKSPACE  &mt BACKSPACE DEL
+&td_tsk_mngr  &kp Q  &kp W  &td_e            &kp R            &kp T       &kp Y     &kp U            &td_i              &kp O       &kp P          &c_lt_tog 5 LEFT_BRACKET
+&kp TAB       &kp A  &kp S  &kp D            &kp F            &kp G       &kp H     &kp J            &kp K              &kp L       &kp SEMICOLON  &kp SQT
+&kp LSHFT     &kp Z  &kp X  &kp C            &kp V            &kp B       &kp N     &kp M            &kp COMMA          &kp PERIOD  &kp SLASH      &mt RALT RIGHT_BRACKET
+                            &mt ENTER LCTRL  &lt 1 BACKSPACE  &td_lcmd    &td_rcmd  &lt 2 BACKSPACE  &mt BACKSPACE DEL
             >;
         };
 
