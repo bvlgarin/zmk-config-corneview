@@ -152,32 +152,26 @@
             timeout-ms = <20>;
         };
 
-        task_mng {
-            bindings = <&kp RS(RC(ESCAPE))>;
-            key-positions = <33 35 34>;
-            timeout-ms = <20>;
-        };
-
         copy_l {
-            bindings = <&kp LC(C)>;
+            bindings = <&mt LC(INSERT) LC(C)>;
             key-positions = <26 25>;
             timeout-ms = <20>;
         };
 
         copy_r {
-            bindings = <&kp RC(C)>;
+            bindings = <&mt RC(INSERT) RC(C)>;
             key-positions = <33 34>;
             timeout-ms = <20>;
         };
 
         paste_l {
-            bindings = <&kp LC(V)>;
+            bindings = <&mt LS(INSERT) LC(V)>;
             key-positions = <26 27>;
             timeout-ms = <20>;
         };
 
         paste_r {
-            bindings = <&kp RC(V)>;
+            bindings = <&mt RS(INS) RC(V)>;
             key-positions = <32 33>;
             timeout-ms = <20>;
         };
